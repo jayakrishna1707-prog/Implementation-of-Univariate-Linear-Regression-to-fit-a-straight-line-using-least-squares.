@@ -1,12 +1,16 @@
 # Implementation of Univariate Linear Regression to fit a straight line using least squares.
-## AIM:
+# AIM:
 To implement univariate Linear Regression to fit a straight line using least squares.
+
 # Equipments Required:
 1.hardware - PCs
 2.Anaconda – Python 3.7 Installation / Jupyter notebook
+
 # algorithm
 1.Get the independent variable X and dependent variable Y.
+
 2.Calculate the mean of the X -values and the mean of the Y -values.
+
 3.Find the slope m of the line of best fit using the formula.
 
 <img width="309" height="137" alt="image" src="https://github.com/user-attachments/assets/4102a1b0-18cb-4d8c-b8c1-ab25ab57cbf9" />
@@ -16,6 +20,7 @@ To implement univariate Linear Regression to fit a straight line using least squ
 <img width="196" height="53" alt="image" src="https://github.com/user-attachments/assets/85555b14-ec50-4c84-8a79-ab33ef6a764e" />
 
 5. Use the slope m and the y -intercept to form the equation of the line. 6. Obtain the straight line equation Y=mX+b and plot the scatterplot.
+
 # Program:
 ```
 import numpy as np 
@@ -23,10 +28,8 @@ import matplotlib.pyplot as plt
 
 x = np.array(eval(input()))
 y = np.array(eval(input()))
-
 ```
-
- <img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/092966db-b2a4-4b62-bc1f-ff68d94577ad" />
+<img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/092966db-b2a4-4b62-bc1f-ff68d94577ad" />
 
 ```
 x_mean = np.mean(x)
@@ -43,21 +46,21 @@ print(m,b)
 
 <img width="350" height="23" alt="image" src="https://github.com/user-attachments/assets/317ac668-73d4-4d99-9100-c3c7060399b5" />
 ```
-
-
 y_predicted = m* x + b 
 print(y_predicted)
 ```
 
-<img width="652" height="49" alt="image" src="https://github.com/user-attachments/assets/ce44c1d8-3884-4271-880e-f06e61e03533" />
+<img width="661" height="55" alt="image" src="https://github.com/user-attachments/assets/e5a5d0b4-6a03-4598-9a75-506fe9311329" />
+
 
 ```
 plt.scatter(x,y)
 plt.plot(x,y_predicted,color='red')
 plt.show()
 ```
+output:
 
-<img width="677" height="506" alt="image" src="https://github.com/user-attachments/assets/f8722178-de7f-4e42-a204-e712071209e3"/>
+<img width="687" height="504" alt="image" src="https://github.com/user-attachments/assets/5591d1f5-44c0-416a-bc02-ff3931f19b17" />
 
 
 
