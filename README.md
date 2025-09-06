@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 
 x = np.array(eval(input()))
 y = np.array(eval(input()))
+
 ```
 
  <img width="264" height="40" alt="image" src="https://github.com/user-attachments/assets/092966db-b2a4-4b62-bc1f-ff68d94577ad" />
@@ -48,17 +49,18 @@ y_predicted = m* x + b
 print(y_predicted)
 ```
 
+<img width="652" height="49" alt="image" src="https://github.com/user-attachments/assets/ce44c1d8-3884-4271-880e-f06e61e03533" />
 
-<img width="651" height="47" alt="image" src="https://github.com/user-attachments/assets/a44b346d-e879-4ccd-99e2-eddf2eb69dfc" />
 ```
 plt.scatter(x,y)
 plt.plot(x,y_predicted,color='red')
 plt.show()
 ```
-# output
+
+<img width="677" height="506" alt="image" src="https://github.com/user-attachments/assets/f8722178-de7f-4e42-a204-e712071209e3"/>
 
 
-<img width="698" height="518" alt="image" src="https://github.com/user-attachments/assets/a129a58a-0b70-419e-b0b2-fcc9465e9db1" />
+
 
 # Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
